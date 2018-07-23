@@ -21,4 +21,9 @@ class Team
     return @coach
   end
 
+  # SETTERS
+  def set_coach_name(coach)
+    @coach = coach
+  end
+
 end
