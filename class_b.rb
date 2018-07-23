@@ -16,9 +16,9 @@ class Team
   def players()
     return @players
   end
-  #
-  # def coach()
-  #   return @coach
-  # end
+
+  def coach()
+    return @coach
+  end
 
 end
