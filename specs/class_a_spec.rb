@@ -26,9 +26,16 @@ def test_change_student_name()
 end
 
 def test_student_talk()
-  result = @student.says("I can talk")
+  result = @student.say("I can talk")
   assert_equal("I can talk", result)
 end
+
+def test_students_fav_programming_language()
+  result = @student.say_fav_language("Ruby")
+  assert_equal("I love Ruby", result)
+end
+
+
 
 
 end

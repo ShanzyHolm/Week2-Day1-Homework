@@ -16,9 +16,13 @@ class Student
   #   return @cohort
   # end
 
-def says(speech)
+def say(speech)
   return speech = "I can talk"
 end
 
+def say_fav_language(language)
+  language = "Ruby"
+  return "I love #{language}"
+end
 
 end
