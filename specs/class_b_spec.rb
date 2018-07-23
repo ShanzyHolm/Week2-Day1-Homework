@@ -6,7 +6,7 @@ class TestSportsTeam_B < MiniTest::Test
 
   def setup()
 
-    @team = Team.new("win-less", ["Snoopy", "Lucy", "Linus", "Woodstock"], "Charlie Brown")
+    @team = Team.new("win-less", ["Snoopy", "Lucy", "Linus", "Woodstock"], "Charlie Brown", 0)
 
   end
 
