@@ -40,6 +40,11 @@ class TestSportsTeam_B < MiniTest::Test
     assert_equal(true, result)
   end
 
+  def test_win_or_lose()
+    result = @team.win_or_lose("win")
+    assert_equal(1, result)
+  end
+
   # def test_change_coach_name()
   #   @team.set_coach_name("Peppermint Patty")
   #   assert_equal("Peppermint Patty", @team.coach())
