@@ -25,4 +25,10 @@ def test_change_student_name()
   assert_equal("Shanzy", @student.student_name())
 end
 
+def test_student_talk()
+  result = @student.says("I can talk")
+  assert_equal("I can talk", result)
+end
+
+
 end

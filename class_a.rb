@@ -16,4 +16,9 @@ class Student
   #   return @cohort
   # end
 
+def says(speech)
+  return speech = "I can talk"
+end
+
+
 end
