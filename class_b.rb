@@ -28,5 +28,9 @@ class Team
   # def set_coach_name(coach)
   #   @coach = coach
   # end
+  # 
+  # def method_name
+  #
+  # end
 
 end
