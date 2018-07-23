@@ -35,6 +35,11 @@ class TestSportsTeam_B < MiniTest::Test
     assert_equal(["Snoopy", "Lucy", "Linus", "Woodstock", "Schroeder"], @team.players())
   end
 
+  def test_player_on_team()
+    result = @team.player_on_team("Woodstock")
+    assert_equal(true, result)
+  end
+
   # def test_change_coach_name()
   #   @team.set_coach_name("Peppermint Patty")
   #   assert_equal("Peppermint Patty", @team.coach())

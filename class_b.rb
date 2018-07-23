@@ -28,9 +28,9 @@ class Team
   # def set_coach_name(coach)
   #   @coach = coach
   # end
-  # 
-  # def method_name
   #
-  # end
+  def player_on_team(name)
+    return @players.include?(name)
+  end
 
 end
