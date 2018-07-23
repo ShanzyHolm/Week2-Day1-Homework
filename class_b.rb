@@ -13,4 +13,8 @@ class Team
     return @team_name
   end
 
+  def players()
+    return @players
+  end
+
 end

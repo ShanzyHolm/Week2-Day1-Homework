@@ -15,5 +15,10 @@ class TestSportsTeam_B < MiniTest::Test
     assert_equal("win-less", result)
   end
 
+  def test_players
+    result = @team.players()
+    assert_equal(["Snoopy", "Lucy", "Linus", "Woodstock"], result)
+  end
+
 
 end
