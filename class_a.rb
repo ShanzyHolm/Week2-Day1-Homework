@@ -17,11 +17,11 @@ class Student
   # end
 
 def say(speech)
-  return speech = "I can talk"
+  speech = "I can talk"
+  return "#{speech}"
 end
 
 def say_fav_language(language)
-  language = "Ruby"
   return "I love #{language}"
 end
 

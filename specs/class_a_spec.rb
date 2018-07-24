@@ -1,5 +1,5 @@
-require("MiniTest/autorun")
-require("MiniTest/rg")
+require("minitest/autorun")
+require("minitest/rg")
 require_relative("../class_a.rb")
 
 class TestClass_A < MiniTest::Test
