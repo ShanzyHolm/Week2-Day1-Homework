@@ -75,6 +75,21 @@ class TestLibrary < MiniTest::Test
 
 # ARRANGE, ACT, ASSERT
 
+  def test_change_rental_details
+    @library.change_rental_details("The_New_York_Trilogy", "Bob", "25/12/2018")
+    result = @library.find_by_title("The_New_York_Trilogy")
+
+    expected_book = {
+      title:  "The_New_York_Trilogy",
+      rental_details: {
+        student_name: "Bob",
+        date: "25/12/2018"
+      }
+    }
+
+    assert_equal(expected_book, result)
+  end
+
 #     # @book_2 = Book.new()
 #     # @book_3 = Book.new("Introduction to Ruby", "Donald", "15/12/2018")
 #

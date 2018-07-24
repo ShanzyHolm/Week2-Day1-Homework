@@ -34,6 +34,12 @@ class Library
     @books.push(book)
   end
 
+  def change_rental_details(name_of_book, student_name, new_date)
+    found_book = find_by_title(name_of_book)
+    found_book[:rental_details][:student_name] = student_name
+    found_book[:rental_details][:date] = new_date
+  end
+
 end
 
 
