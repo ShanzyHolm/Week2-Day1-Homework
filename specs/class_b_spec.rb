@@ -6,7 +6,7 @@ class TestSportsTeam_B < MiniTest::Test
 
   def setup()
 
-    @team = Team.new("win-less", ["Snoopy", "Lucy", "Linus", "Woodstock"], "Charlie Brown", 0)
+    @team = Team.new("win-less", ["Snoopy", "Lucy", "Linus", "Woodstock"], "Charlie Brown")
 
   end
 
@@ -41,9 +41,14 @@ class TestSportsTeam_B < MiniTest::Test
   end
 
   def test_win_or_lose()
-    result = @team.win_or_lose("win")
-    assert_equal(1, result)
+    @team.win_or_lose(true)
+    assert_equal(1, @team.points)
   end
+
+  # def test_win_or_lose()
+  #   result = @team.win_or_lose("win")
+  #   assert_equal(1, result)
+  # end
 
   # def test_change_coach_name()
   #   @team.set_coach_name("Peppermint Patty")
