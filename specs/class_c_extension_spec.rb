@@ -57,6 +57,24 @@ class TestLibrary < MiniTest::Test
     assert_equal(@book[:rental_details], result)
   end
 
+  def test_add_book_without_rental_details()
+    @library.add_book_by_title("Introduction to Ruby")
+
+    expected_book = {
+      title: "Introduction to Ruby",
+      rental_details: {
+        student_name: "",
+        date: ""
+      }
+    }
+
+    actual_book = @library.find_by_title("Introduction to Ruby")
+
+    assert_equal(expected_book, actual_book)
+  end
+
+# ARRANGE, ACT, ASSERT
+
 #     # @book_2 = Book.new()
 #     # @book_3 = Book.new("Introduction to Ruby", "Donald", "15/12/2018")
 #

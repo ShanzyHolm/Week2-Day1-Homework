@@ -23,6 +23,17 @@ class Library
     return book[:rental_details]
   end
 
+  def add_book_by_title(name_of_book)
+    book = {
+      title: name_of_book,
+      rental_details: {
+        student_name: "",
+        date: ""
+      }
+    }
+    @books.push(book)
+  end
+
 end
 
 
