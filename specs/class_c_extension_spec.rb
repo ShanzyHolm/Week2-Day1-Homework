@@ -15,6 +15,16 @@ class TestLibrary < MiniTest::Test
           date: "01/12/2018"
         }
      }
+
+     # @book2 =
+     # {
+     #    title:  "Introduction to Ruby",
+     #    rental_details: {
+     #      student_name: "Donald",
+     #      date: "15/12/2018"
+     #    }
+     # }
+
      @library = Library.new()
      @library.add_book(@book)
 
@@ -41,7 +51,12 @@ class TestLibrary < MiniTest::Test
     assert_equal(@book, result)
   end
 
-#
+
+  def test_get_rental_details_by_title()
+    result = @library.get_rental_details("The_New_York_Trilogy")
+    assert_equal(@book[:rental_details], result)
+  end
+
 #     # @book_2 = Book.new()
 #     # @book_3 = Book.new("Introduction to Ruby", "Donald", "15/12/2018")
 #

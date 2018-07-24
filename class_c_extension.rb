@@ -18,6 +18,11 @@ class Library
     end
   end
 
+  def get_rental_details(title)
+    book = find_by_title(title)
+    return book[:rental_details]
+  end
+
 end
 
 
